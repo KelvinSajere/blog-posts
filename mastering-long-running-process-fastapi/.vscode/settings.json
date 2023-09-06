@@ -1,0 +1,8 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        
+    },
+    "python.terminal.activateEnvironment": false,
+    "python.defaultInterpreterPath":"~/.pyenv/versions/3.8.10/envs/blogpost/bin/python"
+}
