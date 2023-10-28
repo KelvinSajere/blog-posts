@@ -1,0 +1,18 @@
+docker run -v $PWD:/share --rm -t python:3.9-slim bash -c 'python -mvenv pex.venv && ./pex.venv/bin/pip install -U pex && ./pex.venv/bin/pex3 interpreter inspect --python /usr/local/bin/python3.9 --markers --tags --indent 2 > /share/python3.9-complete-platform.json'
+
+- Test
+- SonarQube
+- Coverity
+- Docker build
+- Docker publish
+- Kubernetes
+
+- Add Java
+
+
+Write about 
+
+Challenges of multirepo
+Solving multirepo challenges with monorepo
+Challenges of monorepo
+Do monorepo like a pro with pantsbuild

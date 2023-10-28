@@ -1,0 +1,25 @@
+[GLOBAL]
+pants_version="2.17.0"
+
+backend_packages = [
+  "pants.backend.shell",
+  "pants.backend.python",
+  "pants.backend.docker",
+  "pants.backend.python.lint.black",
+]
+
+
+[python]
+# Even though our repository uses 3.8+, because I have an M1, 
+# I must use Python 3.9+.
+interpreter_constraints = ["==3.9.*"]
+
+[docker]
+env_vars = ["DOCKER_CONFIG=%(homedir)s/.docker"]
+
+
+[python-infer]
+# Infer dependencies from strings that look like module/class names, such as are often
+# found in settings.py, where dependencies are enumerated as strings and not directly imported.
+string_imports = true
+use_rust_parser = true

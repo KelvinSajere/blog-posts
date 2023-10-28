@@ -1,0 +1,9 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.defaultInterpreterPath": "dist/export/python/virtualenv/3.9.6/bin",
+    "python.analysis.extraPaths": [
+        "./python/shared_model",
+        "./src/python/shared_model"
+    ]
+
+}
