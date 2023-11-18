@@ -1,0 +1,2 @@
+# Avoid copying virtual env
+./venv
