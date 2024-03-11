@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "part1/test.py"
+        "part3/test_main.py"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
