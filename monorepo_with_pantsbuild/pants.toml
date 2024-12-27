@@ -1,0 +1,36 @@
+[GLOBAL]
+pants_version = "2.21.0"
+backend_packages = [
+  'pants.backend.python',
+  'pants.backend.python.lint.black',
+  'pants.backend.python.lint.isort',
+  'pants.backend.python.lint.bandit',
+  'pants.backend.docker'
+  
+]
+
+[docker]
+env_vars =[ "CLOUDSDK_PYTHON" ]
+tools = ["docker-credential-osxkeychain",
+ "docker-credential-gcloud",
+ "dirname",
+  "readlink",
+  "python3",
+  # These may be necessary if using Pyenv-installed Python.
+  "cut",
+  "sed",
+  "bash",
+ ]
+
+build_args = ["DATE_TIME"]
+
+
+
+
+[python]
+interpreter_constraints = ['>=3.10,<=3.12']
+[source]
+root_patterns = [ "src/python" ]
+
+
+

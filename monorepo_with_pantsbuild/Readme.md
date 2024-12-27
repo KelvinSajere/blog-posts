@@ -1,0 +1,31 @@
+- What is pantsbuild : DOne
+- Install pantsbuild : Done
+- Create a project in python call task-service api
+  - Creating virtual environment : Done
+  - Adding requirement.txt : Done
+  - Create a task : Done
+  - Update a task : Done
+  - Delete a task : Done
+  - Get all task : Done
+  - pants commands ; 
+    - formatting : Done
+    - linting : Done
+    - security check : Done
+    - testing
+      - Write test :Done
+      - Run test : Done
+      - Test cache : Done
+    - Docker
+      - Add docker support : Done
+      - Write dockerfile : Done
+      - Build image : Done
+      - Run image : Done
+    - Setup docker registry
+      - Tag image : Done
+      - Push registry docker hub : Done
+      - push to google cloud docker registry : Done
+      - Distribute wheel open source pypi
+      - Push wheel to gcp
+    - Deploy
+- Build CI/CD for this  
+
