@@ -10,7 +10,7 @@ backend_packages = [
 ]
 
 [docker]
-env_vars =[ "CLOUDSDK_PYTHON" ]
+env_vars =[ "CLOUDSDK_PYTHON" ,"DOCKER_CONFIG=%(env.HOME)s/.docker"]
 tools = ["docker-credential-osxkeychain",
  "docker-credential-gcloud",
  "dirname",
@@ -21,7 +21,6 @@ tools = ["docker-credential-osxkeychain",
   "sed",
   "bash",
  ]
-
 build_args = ["DATE_TIME"]
 
 

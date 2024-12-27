@@ -1,1 +1,1 @@
-export CLOUDSDK_PYTHON="$(which python3)"
+export CLOUDSDK_PYTHON="$(python3 -c 'import sys; print(sys.executable)')"
