@@ -1,0 +1,22 @@
+{
+    "python.testing.pytestArgs": [
+        "tests",
+        "--durations=0"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "../"  // Adjust the path to your module directory
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*/BUILD":true,
+        "**/*/__pycache__":true,
+        "__pycache__":true
+    }
+}

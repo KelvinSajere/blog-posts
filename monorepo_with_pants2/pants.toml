@@ -1,0 +1,50 @@
+[GLOBAL]
+pants_version = "2.21.0"
+backend_packages = ["pants.backend.python", "pants.backend.python.lint.black"]
+
+[python]
+# Even though our repository uses 3.8+, because I have an M1, 
+# I must use Python 3.9+.
+interpreter_constraints = ["==3.9.*"]
+enable_resolves = true
+
+[pytest]
+args = ["--no-header"]
+
+
+tools = [
+    "docker-credential-osxkeychain",
+    "docker-credential-gcloud",
+    "dirname",
+    "readlink",
+    "python3",
+    # # These may be necessary if using Pyenv-installed Python.
+    "cut",
+    "sed",
+    "bash",
+]
+
+
+docker_image(
+    name="task_api_image",
+image_tags=["1.3"],
+
+)
+
+[docker]
+env_vars = ["DOCKER_CONFIG=%(env.HOME)s/.docker"]
+
+"CLOUDSDK_PYTHON"
+
+repository = "ineeddockeragain/{directory}"
+# # These may be necessary if using Pyenv-installed Python.
+[docker.registries.dev]
+address = "docker.io"
+repository = "ineeddockeragain/{directory}"
+default = true
+
+
+# [docker.registries.dev]
+# address = "us-west3-docker.pkg.dev"
+# repository = "social-media-443307/social-media/{directory}"
+# default = true

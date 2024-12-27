@@ -16,7 +16,8 @@ interpreter_constraints = ["==3.9.*"]
 
 [docker]
 env_vars = ["DOCKER_CONFIG=%(homedir)s/.docker"]
-
+# env_vars = ["DOCKER_CONFIG=%(homedir)s/.docker", ]
+tools = ["docker-credential-osxkeychain"]
 
 [python-infer]
 # Infer dependencies from strings that look like module/class names, such as are often

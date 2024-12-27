@@ -1,0 +1,22 @@
+{
+    "python.testing.pytestArgs": [
+        "src/python/tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    // "files.exclude": {
+    //     "**/.pytest_cache": true,
+    //     // "**/.*": true,
+    //     // "**/_*": true,
+    //     ".pants.d": true,
+    //     "3rdparty": true,
+    //     "dist": true,
+    //     // "**/*/BUILD": true,
+    //     // "**/*/NOT_BUILD": true,
+    //     "**/*/tasks.db": true,
+    //     "tasks.db": true,
+    //     // "**/task_service": true
+    // },
+    // "beautify.onSave": true,
+    "editor.formatOnSave": true,
+}
