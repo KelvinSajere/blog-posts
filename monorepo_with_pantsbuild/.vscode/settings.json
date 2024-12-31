@@ -4,7 +4,8 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
+
     "files.associations": {
-        "BUILD": "plaintext"
+        "BUILD": "pantsbuild"
     }
 }

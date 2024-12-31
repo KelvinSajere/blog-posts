@@ -29,5 +29,7 @@
     - Deploy
 - Build CI/CD for this  
 
+docker run --platform linux/amd64 -it python:3.10-slim bash 
+
 
 

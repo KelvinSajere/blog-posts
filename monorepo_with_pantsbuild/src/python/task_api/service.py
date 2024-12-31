@@ -10,13 +10,6 @@ def create_task(db: Session, title: str, description: str):
     return task
 
 
-
-
-
-
-
-
-
 def get_tasks(db: Session):
     return db.query(Task).all()
 

@@ -16,9 +16,7 @@ app.include_router(router)
 Base.metadata.create_all(bind=engine)
 
 
-load_dotenv()
-
 if __name__ == "__main__":
-    host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 80))
+    host = "0.0.0.0"
+    port = int(os.getenv("PORT", 8080))
     uvicorn.run(app, host=host, port=port)

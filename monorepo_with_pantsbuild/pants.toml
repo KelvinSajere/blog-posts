@@ -2,6 +2,9 @@
 pants_version = "2.21.0"
 backend_packages = [
   'pants.backend.python',
+  "pants.backend.shell",
+  "pants.backend.experimental.adhoc",
+   "pants.backend.experimental.python",
   'pants.backend.python.lint.black',
   'pants.backend.python.lint.isort',
   'pants.backend.python.lint.bandit',
@@ -10,7 +13,7 @@ backend_packages = [
 ]
 
 [docker]
-env_vars =[ "CLOUDSDK_PYTHON" ,"DOCKER_CONFIG=%(env.HOME)s/.docker"]
+env_vars =[ "CLOUDSDK_PYTHON"]
 tools = ["docker-credential-osxkeychain",
  "docker-credential-gcloud",
  "dirname",
@@ -21,7 +24,7 @@ tools = ["docker-credential-osxkeychain",
   "sed",
   "bash",
  ]
-build_args = ["DATE_TIME"]
+# build_args = ["DATE_TIME"]
 
 
 

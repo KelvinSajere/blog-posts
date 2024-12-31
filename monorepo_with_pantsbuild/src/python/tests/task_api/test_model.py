@@ -25,7 +25,6 @@ def test_task_model(db):
     # Create a Task instance
     task = Task(id=1, title="Test Task", description="This is a test description.")
 
-
     # Add the task to the session and commit
     db.add(task)
     db.commit()
