@@ -28,6 +28,8 @@
       - Push wheel to gcp
     - Deploy
 - Build CI/CD for this  
+- Add typescript project
+- Add Rust project
 
 docker run --platform linux/amd64 -it python:3.10-slim bash 
 

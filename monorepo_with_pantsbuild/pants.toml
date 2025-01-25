@@ -26,6 +26,8 @@ tools = ["docker-credential-osxkeychain",
  ]
 # build_args = ["DATE_TIME"]
 
+[cli.alias]
+
 
 
 
